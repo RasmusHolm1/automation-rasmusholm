@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-20T15:21:37.618Z",
+    "end": "2020-11-20T15:22:25.147Z",
+    "duration": 47529,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "30df11a4-9487-4bb2-91bb-a85501466a1c",
+      "title": "",
+      "fullFile": "cypress/integration/testsuite.spec.js",
+      "file": "cypress/integration/testsuite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+          "title": "Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a room",
+              "fullTitle": "Test suite Create a room",
+              "timedOut": null,
+              "duration": 12019,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.navigateToCreateRoomPage(cy, 'New Room');\ncreateRoomFuncs.createNewRoom(cy, 'double', '502', '5', '5000', ['ensuite', 'penthouse'], 'Floor 5, Room 502');",
+              "err": {},
+              "uuid": "7e400363-e1d7-4b13-b70a-8f8220e1ed41",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete room",
+              "fullTitle": "Test suite Delete room",
+              "timedOut": null,
+              "duration": 4883,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.navigateToCreateRoomPage(cy, 'New Room');\ncreateRoomFuncs.createNewRoom(cy, 'double', '202', '2', '2000', ['balcony', 'sea_view'], 'Floor 2, Room 202');\nroomsFuncs.deleteLastRoom(cy, 'Floor 2, Room 202');",
+              "err": {},
+              "uuid": "42000ccf-3e16-4d84-a50b-762966b85fa2",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC03-Create new client",
+              "fullTitle": "Test suite TC03-Create new client",
+              "timedOut": null,
+              "duration": 4790,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToClientsPage(cy, 'Clients');\nclientsFuncs.navigateToCreateClientPage(cy, 'New Client');\ncreateClientFuncs.createNewClient(cy, 'Jane Doe', 'jane.doe@email.com', '+467012345678', 'Jane Doe');",
+              "err": {},
+              "uuid": "eee0a7fe-9ad2-4e98-b296-482f4a247065",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC04-Create new reservation",
+              "fullTitle": "Test suite TC04-Create new reservation",
+              "timedOut": null,
+              "duration": 11260,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToRoomsPage(cy, 'Rooms');\nroomsFuncs.navigateToCreateRoomPage(cy, 'New Room');\ncreateRoomFuncs.createNewRoom(cy, 'single', '302', '3', '1700', 'balcony', 'Floor 3, Room 302');\nroomsFuncs.navBackToDashbord(cy, 'Tester Hotel Overview');\ndashboardFuncs.navigateToClientsPage(cy, 'Clients');\nclientsFuncs.navigateToCreateClientPage(cy, 'New Client');\ncreateClientFuncs.createNewClient(cy, 'John Doe', 'john.doe@email.com', '+467012345678', 'John Doe');\nclientsFuncs.navBackToDashboard(cy, 'Tester Hotel Overview');\ndashboardFuncs.navigateToReservationsPage(cy, 'Reservations');\nreservationsFuncs.navigateToCreateReservationPage(cy, 'New Reservation');\ncreateReservationFuncs.createNewReservation(cy, '2020-12-30', '2021-01-03', '1', '1', '', 'Reservations');",
+              "err": {},
+              "uuid": "253ebd93-1533-4594-aea4-b11c2ecc0d17",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC05-Create new bill",
+              "fullTitle": "Test suite TC05-Create new bill",
+              "timedOut": null,
+              "duration": 3121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToBillsPage(cy, 'Bills');\nbillsFuncs.navigateToCreateBillPage(cy, 'New Bill');\ncreateBillFuncs.createNewBill(cy, '8000', 'Bills');",
+              "err": {},
+              "uuid": "57a58b42-2fb2-4352-b5fa-84ab5fe39804",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC06-Edit bill",
+              "fullTitle": "Test suite TC06-Edit bill",
+              "timedOut": null,
+              "duration": 4321,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboardFuncs.navigateToBillsPage(cy, 'Bills');\nbillsFuncs.navigateToCreateBillPage(cy, 'New Bill');\ncreateBillFuncs.createNewBill(cy, '11000', 'Bills');\nbillsFuncs.navigateToEditBillPage(cy, 'Bill: ');\neditBillsFuncs.editBillToPaid(cy, 'Bills');",
+              "err": {},
+              "uuid": "002a3aad-628c-4940-8e5c-f59dc62832a9",
+              "parentUUID": "a014e3bd-e090-45df-b8b6-407c86d7efc0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e400363-e1d7-4b13-b70a-8f8220e1ed41",
+            "42000ccf-3e16-4d84-a50b-762966b85fa2",
+            "eee0a7fe-9ad2-4e98-b296-482f4a247065",
+            "253ebd93-1533-4594-aea4-b11c2ecc0d17",
+            "57a58b42-2fb2-4352-b5fa-84ab5fe39804",
+            "002a3aad-628c-4940-8e5c-f59dc62832a9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
